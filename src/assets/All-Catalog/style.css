@@ -1,0 +1,31 @@
+* {
+	font-family: montserrat;
+}
+#all-products {
+	display: flex;
+	gap: 15px;
+	margin-top: 3rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.single-prod-div {
+	width: 100%;
+}
+.product-div {
+	width: 30%;
+	padding: 2rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+	.product-div {
+		width: 48%;
+		padding: 2rem 0;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.product-div {
+		width: 100%;
+	}
+}

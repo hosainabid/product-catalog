@@ -1,0 +1,114 @@
+#form-main {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+input[type="text"] {
+	height: 30px;
+	font-size: 16px;
+	padding: 5px 10px;
+	border: 1px solid #740484;
+	border-radius: 4px;
+	color: #740484;
+}
+input[type="text"]:focus {
+	border: 2px solid #740484;
+}
+
+input[type="text"]:active {
+	border: 2px solid #740484;
+}
+
+::placeholder {
+	color: #740484;
+}
+
+select {
+	height: 40px;
+	font-size: 16px;
+	padding: 5px 10px;
+	border: 1px solid #740484;
+	border-radius: 4px;
+	color: #740484;
+}
+
+input[type="submit"] {
+	height: 45px;
+	background: #740484;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+	visibility: hidden;
+}
+.custom-file-input::before {
+	content: "Select Images";
+	display: inline-block;
+	background: linear-gradient(top, #f9f9f9, #e3e3e3);
+	border: 1px solid #740484;
+	border-radius: 3px;
+	padding: 10px;
+	outline: none;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	text-shadow: 1px 1px #fff;
+	font-weight: 700;
+	font-size: 10pt;
+	color: #740484;
+	width: 50%;
+	text-align: center;
+}
+.custom-file-input:hover::before {
+	border-color: #740484;
+}
+.custom-file-input:active::before {
+	background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+input[type="submit"]:hover {
+	background: white;
+	color: #740484;
+	border: 1px solid #740484;
+	transition: background 0.5s ease;
+}
+
+.img-blob {
+	display: flex;
+	gap: 10px;
+	overflow: scroll;
+}
+form img {
+	width: 48%;
+}
+
+/* width */
+::-webkit-scrollbar {
+	height: 6px;
+	width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #d23847;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #740484;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #740484;
+}
